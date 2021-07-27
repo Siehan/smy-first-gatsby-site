@@ -53,7 +53,7 @@ function SocialMediaPage() {
                   <ChakraLink
                     href={item.path}
                     aria-label={item.title}
-                    mx="6"
+                    mx={6}
                     _focus={{ outline: "none" }}
                     key={index}
                     isExternal

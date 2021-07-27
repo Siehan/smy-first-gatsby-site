@@ -6,8 +6,7 @@ import calendar1 from "../images/calendar1.jpg";
 import calendar3 from "../images/calendar3.png";
 import calendar4 from "../images/calendar4.png";
 import Feature from "./Feature";
-import { Box, Container, SimpleGrid } from "@chakra-ui/react";
-import { Button, Center, Text } from "@chakra-ui/react";
+import { Box, Button, Center, Container, SimpleGrid, Text } from "@chakra-ui/react";
 import SlideFadeOnScroll from "./SlideFadeOnScroll";
 
 const Features = () => {
@@ -45,7 +44,7 @@ const Features = () => {
   ];
   return (
     <Box as="section" w={"100%"}>
-      <Container borderRadius="md" maxW="container.xl" p="20" pb="10" boxShadow="xl">
+      <Container borderRadius="md" maxW="container.xl" p={20} pb={10} boxShadow="xl">
         <SlideFadeOnScroll>
           <SimpleGrid columns={[1, null, 3]} gap="8">
             {features.map((el, index) => {
@@ -53,7 +52,7 @@ const Features = () => {
             })}
           </SimpleGrid>
           <Box>
-            <Text fontSize="xl" mb="10" pt="7" textAlign="center">
+            <Text fontSize="xl" mb={10} pt={7} textAlign="center">
               Please, feel free to download my Curriculum vitae for more informations :
             </Text>
             <Center>

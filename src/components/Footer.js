@@ -20,7 +20,7 @@ const Footer = () => {
         bgGradient: "linear(to-l, #3CAADD, #4FAA1B)",
       }}
     >
-      <Text fontSize="22" p={2}>
+      <Text fontSize={22} p={2}>
         Copyright © 2021 Smy - Built with{" "}
         <span role="img" aria-label="red heart">
           ❤️
