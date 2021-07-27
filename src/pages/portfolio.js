@@ -30,7 +30,7 @@ const PortfolioPage = () => {
               I love photography !
             </Text>
 
-            <Box align="center" borderRadius="md" boxShadow="xl" p={10} pb={20} overflow="hidden" bgColor={"grey.100"}>
+            <Box align="center" borderRadius="md" boxShadow="xl" p={10} pb={20} overflow="hidden">
               <Box pb={10}>
                 <StaticImage src="../images/francine.jpg" borderRadius="md" alt="francine" width={550} height={700} />
               </Box>
