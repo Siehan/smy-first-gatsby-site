@@ -2,8 +2,8 @@ import * as React from "react";
 import { Box, Container, Heading, Text } from "@chakra-ui/react";
 import { StaticImage } from "gatsby-plugin-image";
 import Navigation from "../components/Navigation";
-import SlideFadeOnScroll from "../components/SlideFadeOnScroll";
 import Footer from "../components/Footer";
+import SlideFadeOnScroll from "../components/SlideFadeOnScroll";
 
 const PortfolioPage = () => {
   return (
@@ -25,37 +25,37 @@ const PortfolioPage = () => {
             >
               PORTFOLIO
             </Heading>
+
             <Text fontSize={25} mb={10} pt={5} textAlign="center">
               I love photography !
             </Text>
 
-            <Box align="center" borderRadius="md" boxShadow="xl" p={10} pb={20} overflow="hidden">
+            <Box align="center" borderRadius="md" boxShadow="xl" p={10} pb={20} overflow="hidden" bgColor={"grey.100"}>
               <Box pb={10}>
-                <StaticImage src="../images/francine.jpg" borderRadius="md" alt="francine" placeholder="blurred" />
+                <StaticImage src="../images/francine.jpg" borderRadius="md" alt="francine" width={550} height={700} />
+              </Box>
+              <Box pb={10}>
+                <StaticImage src="../images/anabelle.jpg" borderRadius="md" alt="anabelle" width={550} height={700} />
               </Box>
 
               <Box pb={10}>
-                <StaticImage src="../images/anabelle.jpg" borderRadius="md" alt="anabelle" placeholder="blurred" />
+                <StaticImage src="../images/anabelle2.jpg" borderRadius="md" alt="anabelle2" width={550} height={700} />
               </Box>
 
               <Box pb={10}>
-                <StaticImage src="../images/anabelle2.jpg" borderRadius="md" alt="anabelle2" placeholder="blurred" />
+                <StaticImage src="../images/yoanne.jpg" borderRadius="md" alt="Yoanne" width={550} height={700} />
               </Box>
 
               <Box pb={10}>
-                <StaticImage src="../images/yoanne.jpg" borderRadius="md" alt="Yoanne" placeholder="blurred" />
+                <StaticImage src="../images/francine2.jpg" borderRadius="md" alt="Francine2" width={550} height={700} />
               </Box>
 
               <Box pb={10}>
-                <StaticImage src="../images/francine2.jpg" borderRadius="md" alt="Francine2" placeholder="blurred" />
+                <StaticImage src="../images/francine3.jpg" borderRadius="md" alt="Francine3" width={550} height={700} />
               </Box>
 
               <Box pb={10}>
-                <StaticImage src="../images/francine3.jpg" borderRadius="md" alt="Francine3" placeholder="blurred" />
-              </Box>
-
-              <Box pb={10}>
-                <StaticImage src="../images/francine4.jpg" borderRadius="md" alt="Francine4" placeholder="blurred" />
+                <StaticImage src="../images/francine4.jpg" borderRadius="md" alt="Francine4" width={550} height={700} />
               </Box>
             </Box>
           </SlideFadeOnScroll>
