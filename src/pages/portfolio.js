@@ -30,7 +30,18 @@ const PortfolioPage = () => {
               I love photography !
             </Text>
 
-            <Box align="center" borderRadius="md" boxShadow="xl" p={10} pb={20} overflow="hidden">
+            <Box
+              align="center"
+              borderRadius="md"
+              boxShadow="xl"
+              p={10}
+              pb={20}
+              overflow="hidden"
+              bgGradient="linear(to-l, orange, yellow)"
+              _hover={{
+                bgGradient: "linear(to-l, #48BB78, #81E6D9)",
+              }}
+            >
               <Box pb={10}>
                 <StaticImage src="../images/francine.jpg" borderRadius="md" alt="francine" width={550} height={700} />
               </Box>
