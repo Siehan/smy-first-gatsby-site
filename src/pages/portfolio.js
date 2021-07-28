@@ -21,7 +21,7 @@ const PortfolioPage = () => {
         <Container borderRadius="md" maxW="container.xl" py={20}>
           <SlideFadeOnScroll>
             <Heading
-              mb={10}
+              mb={5}
               p={4}
               borderRadius="md"
               textShadow="1px 4px orange"
@@ -34,7 +34,7 @@ const PortfolioPage = () => {
               PORTFOLIO
             </Heading>
 
-            <Text fontSize={25} mb={10} pt={5} textAlign="center">
+            <Text fontSize={28} mb={5} textAlign="center">
               I love photography !
             </Text>
 
