@@ -1,13 +1,15 @@
 import * as React from "react";
 import NavigationListItems from "./NavigationListItems";
-import { Avatar, Box, Link as ChakraLink, useMediaQuery, Wrap, WrapItem } from "@chakra-ui/react";
+import { Avatar, Box, Link as ChakraLink, useColorModeValue, useMediaQuery, Wrap, WrapItem } from "@chakra-ui/react";
 import smyPhoto2 from "../images/smyPhoto2.jpg";
 import { Link } from "gatsby";
-import MobileNavigation from "../components/MobileNavigation";
+import MobileNavigation from "./MobileNavigation";
+import SwitchColorMode from "./SwitchColorMode";
 
 const Navigation = () => {
   const [isMobile] = useMediaQuery("(max-width: 720px)");
   console.log(isMobile);
+  const bg = useColorModeValue("whiteAlpha.800", "blackAlpha.200");
   return (
     <>
       <Box
@@ -21,6 +23,7 @@ const Navigation = () => {
             color: "darkorange",
           },
         }}
+        bg={bg}
         py={3}
         px={[4, 6, 10, 14, 20]}
         w="100%"
@@ -47,6 +50,7 @@ const Navigation = () => {
         ) : (
           <NavigationListItems sx={{ display: "flex" }} />
         )}
+        <SwitchColorMode />
       </Box>
     </>
   );

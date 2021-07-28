@@ -9,7 +9,15 @@ const PortfolioPage = () => {
   return (
     <>
       <Navigation />
-      <Box as="section" w={"100%"} py={10}>
+      <Box
+        as="section"
+        w={"100%"}
+        py={10}
+        bgGradient="linear(to-l, orange, yellow)"
+        _hover={{
+          bgGradient: "linear(to-l, #48BB78, #81E6D9)",
+        }}
+      >
         <Container borderRadius="md" maxW="container.xl" py={20}>
           <SlideFadeOnScroll>
             <Heading
@@ -42,31 +50,26 @@ const PortfolioPage = () => {
                 bgGradient: "linear(to-l, #48BB78, #81E6D9)",
               }}
             >
-              <Box pb={10}>
-                <StaticImage src="../images/francine.jpg" borderRadius="md" alt="francine" width={550} height={700} />
+              <Box p={5}>
+                <StaticImage ml={"3"} src="../images/francine.jpg" alt="francine" width={550} height={700} />
               </Box>
-              <Box pb={10}>
-                <StaticImage src="../images/anabelle.jpg" borderRadius="md" alt="anabelle" width={550} height={700} />
+              <Box p={5}>
+                <StaticImage src="../images/anabelle.jpg" alt="anabelle" width={550} height={700} />
               </Box>
-
-              <Box pb={10}>
-                <StaticImage src="../images/anabelle2.jpg" borderRadius="md" alt="anabelle2" width={550} height={700} />
+              <Box p={5}>
+                <StaticImage src="../images/anabelle2.jpg" alt="anabelle2" width={550} height={700} />
               </Box>
-
-              <Box pb={10}>
-                <StaticImage src="../images/yoanne.jpg" borderRadius="md" alt="Yoanne" width={550} height={700} />
+              <Box p={5}>
+                <StaticImage src="../images/yoanne.jpg" alt="Yoanne" width={550} height={700} />
               </Box>
-
-              <Box pb={10}>
-                <StaticImage src="../images/francine2.jpg" borderRadius="md" alt="Francine2" width={550} height={700} />
+              <Box p={5}>
+                <StaticImage src="../images/francine2.jpg" alt="Francine2" width={550} height={700} />
               </Box>
-
-              <Box pb={10}>
-                <StaticImage src="../images/francine3.jpg" borderRadius="md" alt="Francine3" width={550} height={700} />
+              <Box p={5}>
+                <StaticImage src="../images/francine3.jpg" alt="Francine3" width={550} height={700} />
               </Box>
-
-              <Box pb={10}>
-                <StaticImage src="../images/francine4.jpg" borderRadius="md" alt="Francine4" width={550} height={700} />
+              <Box p={5}>
+                <StaticImage src="../images/francine4.jpg" alt="Francine4" width={550} height={700} />
               </Box>
             </Box>
           </SlideFadeOnScroll>
