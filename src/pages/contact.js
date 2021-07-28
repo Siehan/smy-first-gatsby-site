@@ -38,7 +38,7 @@ const ContactPage = () => {
               />
               <Box>
                 <Text fontSize={25} mb={10} textAlign="center">
-                  if you wish to send me a message, click on below to complete the form :
+                  If you wish to send me a message, click on below to complete the form :
                 </Text>
                 <Center>
                   <Button colorScheme="teal" size="lg" onClick={onOpen}>

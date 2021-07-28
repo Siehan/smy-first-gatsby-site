@@ -4,6 +4,8 @@ import { CheckCircleIcon } from "@chakra-ui/icons";
 import { Box, Container, Heading, List, ListItem, ListIcon, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import Features from "../components/Features";
+
 import SlideFadeOnScroll from "../components/SlideFadeOnScroll";
 
 const ExperiencePage = () => {
@@ -38,7 +40,7 @@ const ExperiencePage = () => {
               Time has flown!
             </Text>
 
-            <Box align="center" borderRadius="md" boxShadow="xl" p={10} pb={20} overflow="hidden">
+            <Box flex="1" align="center" borderRadius="md" boxShadow="xl" p={10} pb={20} overflow="hidden">
               <StaticImage
                 src="../images/code_review_bro_gray.png"
                 alt="Code review"
@@ -54,7 +56,7 @@ const ExperiencePage = () => {
                 }}
                 alignItems="center"
               >
-                <Box>
+                <Box flex="1">
                   <Heading mb={6} textAlign="center" fontSize={40} textShadow="1px 3px orange">
                     <Text as="span" color="teal">
                       Experiences
@@ -74,6 +76,7 @@ const ExperiencePage = () => {
                 </Box>
               </Stack>
             </Box>
+            <Features />
           </SlideFadeOnScroll>
         </Container>
       </Box>
