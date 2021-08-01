@@ -11,7 +11,7 @@ const ContactPage = () => {
   return (
     <>
       <Navigation />
-      <Box w={"100%"} py={10}>
+      <Box w={"100%"} py={10} bgGradient="linear(to-l, gray.400, gray.300, gray.400)">
         <Container borderRadius="md" maxW="container.xl" py={20}>
           <SlideFadeOnScroll>
             <Heading

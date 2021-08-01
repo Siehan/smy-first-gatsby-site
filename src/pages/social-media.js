@@ -19,7 +19,7 @@ function SocialMediaPage() {
   return (
     <>
       <Navigation />
-      <Box as="section" w={"100%"} py={10}>
+      <Box w={"100%"} py={10} bgGradient="linear(to-l, gray.400, gray.300, gray.400)">
         <Container borderRadius="md" maxW="container.xl" py={20}>
           <SlideFadeOnScroll>
             <Heading
@@ -36,19 +36,10 @@ function SocialMediaPage() {
               SOCIAL MEDIA
             </Heading>
 
-            <Box align="center" borderRadius="md" boxShadow="xl" pt={20} pb={20} overflow="hidden">
-              <Box pb={10}>
-                <StaticImage
-                  src="../images/social_media3.jpg"
-                  alt="Social media"
-                  width={500}
-                  height={300}
-                  borderRadius="md"
-                  boxShadow="md"
-                />
-              </Box>
+            <Box align="center" borderRadius="md" boxShadow="xl" p={10} pb={20} overflow="hidden">
+              <StaticImage src="../images/social_media3.jpg" alt="Social media" placeholder={"blurred"} />
 
-              <Box pt={10} pb={10}>
+              <Box pt={20} pb={15}>
                 {socialAccounts.map((item, index) => (
                   <ChakraLink
                     href={item.path}
@@ -58,8 +49,8 @@ function SocialMediaPage() {
                     key={index}
                     isExternal
                   >
-                    <Button aria-label={item.title} bg="transparent" boxSize="55" m={5}>
-                      <Icon as={item.Icon} boxSize="55" />
+                    <Button aria-label={item.title} bg="transparent" boxSize="55" m={50}>
+                      <Icon as={item.Icon} boxSize="75" />
                     </Button>
                   </ChakraLink>
                 ))}

@@ -9,13 +9,13 @@ import Features from "../components/Features";
 import SlideFadeOnScroll from "../components/SlideFadeOnScroll";
 
 const ExperiencePage = () => {
-  const list = ["2021", "2020", "2019-1997", "1997", "1997-1993", "1992-1991"];
+  const list = ["2021", "2020", "2019 - 1997", "1997", "1997 - 1993", "1992 - 1991"];
   const color = useColorModeValue("orange");
 
   return (
     <>
       <Navigation />
-      <Box as="section" w={"100%"} py={10}>
+      <Box as="section" w={"100%"} py={10} bgGradient="linear(to-l, gray.200, gray.400, gray.200)">
         <Container borderRadius="md" maxW="container.xl" py={20}>
           <SlideFadeOnScroll>
             <Heading
@@ -41,13 +41,7 @@ const ExperiencePage = () => {
             </Text>
 
             <Box flex="1" align="center" borderRadius="md" boxShadow="xl" p={10} pb={20} overflow="hidden">
-              <StaticImage
-                src="../images/code_review_bro_gray.png"
-                alt="Code review"
-                placeholder={"blurred"}
-                width={500}
-                height={600}
-              />
+              <StaticImage src="../images/code_review_bro_gray.png" alt="Code review" placeholder={"blurred"} />
 
               <Stack
                 direction={["column", null, "row"]}
@@ -63,7 +57,7 @@ const ExperiencePage = () => {
                     </Text>
                   </Heading>
 
-                  <List sx={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+                  <List sx={{ display: "grid", gridTemplateRows: "1fr 1fr", gap: 15 }}>
                     {list.map((el, index) => {
                       return (
                         <ListItem key={index}>

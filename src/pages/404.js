@@ -2,63 +2,65 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Navigation from "../components/Navigation";
-
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-};
-
-const paragraphStyles = {
-  marginBottom: 48,
-};
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-};
+import Footer from "../components/Footer";
+import { Box, Button, Center, Container, Heading, Text } from "@chakra-ui/react";
+import SlideFadeOnScroll from "../components/SlideFadeOnScroll";
 
 // markup
 const NotFoundPage = () => {
   return (
     <>
       <Navigation />
-      <main style={pageStyles}>
-        <StaticImage
-          src="../images/icon_contact.png"
-          alt="icon contact"
-          placeholder={"blurred"}
-          width={500}
-          height={500}
-        />
-        <title>Not found</title>
-        <h1 style={headingStyles}>Page not found</h1>
-        <p style={paragraphStyles}>
-          Sorry{" "}
-          <span role="img" aria-label="Pensive emoji">
-            😔
-          </span>{" "}
-          we couldn’t find what you were looking for.
-          <br />
-          {process.env.NODE_ENV === "development" ? (
-            <>
-              <br />
-              Try creating a page in <code style={codeStyles}>src/pages/</code>.
-              <br />
-            </>
-          ) : null}
-          <br />
-          <Link to="/">Go home</Link>.
-        </p>
-      </main>
+      <Box as="section" w={"100%"} py={10} bgGradient="linear(to-l, gray.200, gray.400, gray.200)">
+        >
+        <Container borderRadius="md" maxW="container.xl" py={20}>
+          <SlideFadeOnScroll>
+            <Heading
+              mb={10}
+              p={4}
+              borderRadius="md"
+              textShadow="1px 4px orange"
+              align="center"
+              bgGradient="linear(to-r, red, orange, red )"
+              _hover={{
+                bgGradient: "linear(to-l, orange, yellow)",
+              }}
+            >
+              PAGE NOT FOUND
+            </Heading>
+
+            <Box align="center" borderRadius="md" boxShadow="xl" pt={20} pb={20} overflow="hidden">
+              <Box pb={10}>
+                <StaticImage
+                  src="../images/404-page-not-found.png"
+                  alt="Page not found"
+                  placeholder={"blurred"}
+                  width={600}
+                  height={700}
+                  borderRadius="md"
+                  boxShadow="md"
+                />
+              </Box>
+              <Center>
+                <Text fontSize={25} mb={10} textAlign="center">
+                  Oops{" "}
+                  <span role="img" aria-label="Pensive emoji">
+                    😔
+                  </span>{" "}
+                  we couldn’t find what you were looking for.
+                  <br />
+                  {process.env.NODE_ENV === "development" ? <></> : null}
+                  <br />
+                  <Button colorScheme="red" size="lg">
+                    <Link to="/">Back Home</Link>
+                  </Button>
+                </Text>
+              </Center>
+            </Box>
+          </SlideFadeOnScroll>
+        </Container>
+      </Box>
+      <Footer />
     </>
   );
 };

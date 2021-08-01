@@ -8,7 +8,14 @@ const MobileNavigation = ({ children }) => {
   return (
     <>
       <Button as={IconButton} aria-label="Options" icon={<HamburgerIcon />} variant="outline" onClick={onToggle} />
-      <Box position="absolute" left="0" right="0" top="100%" shadow="xl">
+      <Box
+        bgGradient="linear(to-l,gray.300,yellow.400, gray.300)"
+        position="absolute"
+        left="0"
+        right="0"
+        top="100%"
+        shadow="xl"
+      >
         <Fade in={isOpen} unmountOnExit={true}>
           <Box p="4">{children}</Box>
         </Fade>

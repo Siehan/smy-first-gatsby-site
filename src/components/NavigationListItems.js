@@ -14,6 +14,7 @@ const NavigationListItems = ({ sx }) => {
       <ListItem>
         <Link to="/">Home</Link>
       </ListItem>
+
       <ListItem>
         <Link to="/about">About</Link>
       </ListItem>
@@ -28,6 +29,9 @@ const NavigationListItems = ({ sx }) => {
       </ListItem>
       <ListItem>
         <Link to="/contact">Contact</Link>
+      </ListItem>
+      <ListItem>
+        <Link to="/404">404</Link>
       </ListItem>
     </List>
   );
