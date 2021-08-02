@@ -40,7 +40,7 @@ function SocialMediaPage() {
               <StaticImage
                 src="../images/social_media3.jpg"
                 alt="Social media"
-                imgStyle={{ borderRadius: "1%" }}
+                imgStyle={{ borderRadius: "2%" }}
                 placeholder={"blurred"}
               />
 

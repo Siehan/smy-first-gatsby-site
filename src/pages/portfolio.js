@@ -47,7 +47,7 @@ const PortfolioPage = () => {
                   ml={"3"}
                   src="../images/francine.jpg"
                   alt="francine"
-                  imgStyle={{ borderRadius: "0.8%" }}
+                  imgStyle={{ borderRadius: "2%" }}
                   placeholder="blurred"
                   width={550}
                   height={700}
@@ -57,7 +57,7 @@ const PortfolioPage = () => {
                 <StaticImage
                   src="../images/anabelle.jpg"
                   alt="anabelle"
-                  imgStyle={{ borderRadius: "0.8%" }}
+                  imgStyle={{ borderRadius: "2%" }}
                   placeholder="blurred"
                   width={550}
                   height={700}
@@ -67,7 +67,7 @@ const PortfolioPage = () => {
                 <StaticImage
                   src="../images/anabelle2.jpg"
                   alt="anabelle2"
-                  imgStyle={{ borderRadius: "0.8%" }}
+                  imgStyle={{ borderRadius: "2%" }}
                   placeholder="blurred"
                   width={550}
                   height={700}
@@ -77,7 +77,7 @@ const PortfolioPage = () => {
                 <StaticImage
                   src="../images/yoanne.jpg"
                   alt="Yoanne"
-                  imgStyle={{ borderRadius: "0.8%" }}
+                  imgStyle={{ borderRadius: "2%" }}
                   placeholder="blurred"
                   width={550}
                   height={700}
@@ -87,7 +87,7 @@ const PortfolioPage = () => {
                 <StaticImage
                   src="../images/francine2.jpg"
                   alt="Francine2"
-                  imgStyle={{ borderRadius: "0.8%" }}
+                  imgStyle={{ borderRadius: "2%" }}
                   placeholder="blurred"
                   width={550}
                   height={700}
@@ -97,7 +97,7 @@ const PortfolioPage = () => {
                 <StaticImage
                   src="../images/francine3.jpg"
                   alt="Francine3"
-                  imgStyle={{ borderRadius: "0.8%" }}
+                  imgStyle={{ borderRadius: "2%" }}
                   placeholder="blurred"
                   width={550}
                   height={700}
@@ -107,7 +107,7 @@ const PortfolioPage = () => {
                 <StaticImage
                   src="../images/francine4.jpg"
                   alt="Francine4"
-                  imgStyle={{ borderRadius: "0.8%" }}
+                  imgStyle={{ borderRadius: "2%" }}
                   placeholder="blurred"
                   width={550}
                   height={700}

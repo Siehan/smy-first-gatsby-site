@@ -33,7 +33,7 @@ const NotFoundPage = () => {
                 <StaticImage
                   src="../images/404-page-not-found.png"
                   alt="Page not found"
-                  imgStyle={{ borderRadius: "1%" }}
+                  imgStyle={{ borderRadius: "2%" }}
                   placeholder={"blurred"}
                   width={600}
                   height={700}
