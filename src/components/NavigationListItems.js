@@ -14,15 +14,17 @@ const NavigationListItems = ({ sx }) => {
       <ListItem>
         <Link to="/">Home</Link>
       </ListItem>
-
       <ListItem>
         <Link to="/about">About</Link>
       </ListItem>
       <ListItem>
-        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/infos">Infos</Link>
       </ListItem>
       <ListItem>
         <Link to="/experience">Experience</Link>
+      </ListItem>
+      <ListItem>
+        <Link to="/portfolio">Portfolio</Link>
       </ListItem>
       <ListItem>
         <Link to="/social-media">Social Media</Link>

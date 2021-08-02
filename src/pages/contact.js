@@ -42,7 +42,7 @@ const ContactPage = () => {
                   If you wish to send me a message, click on below to complete the form :
                 </Text>
                 <Center>
-                  <Button colorScheme="teal" size="lg" onClick={onOpen}>
+                  <Button colorScheme="blue" size="lg" onClick={onOpen}>
                     Submit
                   </Button>
                 </Center>

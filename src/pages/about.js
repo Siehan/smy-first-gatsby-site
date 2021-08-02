@@ -9,7 +9,7 @@ const AboutPage = () => {
   return (
     <>
       <Navigation />
-      <Box as="section" w={"100%"} py={10} border={"yellow"} bgGradient="linear(to-l, gray.400, gray.300, gray.400)">
+      <Box as="section" w={"100%"} py={10} bgGradient="linear(to-l, gray.400, gray.200, gray.400)">
         <Container borderRadius="md" maxW="container.xl" py={20}>
           <SlideFadeOnScroll>
             <Heading
@@ -39,12 +39,18 @@ const AboutPage = () => {
               <Box>
                 <Heading textAlign="center" pt="5" fontWeight="bold" fontSize={40} textShadow="1px 3px orange">
                   <Text as="span" color="teal">
-                    I am a Junior Web Developper
+                    Today, I am a junior web developer
                   </Text>
                 </Heading>
               </Box>
-              <Text fontSize={25} mb={10} pt={5} textAlign="center">
-                Who am I ? What can I do? 🧐
+              <Text fontSize={25} mb={5} pt={5} textAlign="center">
+                Who am I ? 🧐
+              </Text>
+              <Text fontSize={25} mb={5} textAlign="center">
+                What are my experiences ? 🧐
+              </Text>
+              <Text fontSize={25} mb={5} textAlign="center">
+                What are my abilities ? 🧐
               </Text>
             </Box>
           </SlideFadeOnScroll>

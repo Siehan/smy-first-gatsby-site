@@ -7,7 +7,7 @@ import { Box, Button, Center, Container, Heading, Text } from "@chakra-ui/react"
 import SlideFadeOnScroll from "../components/SlideFadeOnScroll";
 
 // markup
-const NotFoundPage = () => {
+const InfosPage = () => {
   return (
     <>
       <Navigation />
@@ -25,32 +25,30 @@ const NotFoundPage = () => {
                 bgGradient: "linear(to-l, orange, yellow)",
               }}
             >
-              PAGE NOT FOUND
+              PAGE UNDER CONSTRUCTION
             </Heading>
 
             <Box align="center" borderRadius="md" boxShadow="xl" pt={20} pb={20} overflow="hidden">
               <Box pb={10}>
                 <StaticImage
-                  src="../images/404-page-not-found.png"
-                  alt="Page not found"
+                  src="../images/crane.png"
+                  alt="crane"
                   imgStyle={{ borderRadius: "2%" }}
                   placeholder={"blurred"}
-                  width={600}
-                  height={700}
                 />
               </Box>
               <Center>
                 <Text fontSize={30} mb={10} textAlign="center">
                   Oops{" "}
                   <span role="img" aria-label="Pensive emoji">
-                    🧐🤔😔
+                    👷👷🏽‍♀️👷🏾‍♀️
                   </span>{" "}
-                  we couldn’t find what you were looking for.
+                  This page is under construction. I'm still thinking about it ...
                   <br />
                   {process.env.NODE_ENV === "development" ? <></> : null}
                   <br />
                   <Button colorScheme="red" size="lg">
-                    <Link to="/">Back Home</Link>
+                    <Link to="/about">About</Link>
                   </Button>
                 </Text>
               </Center>
@@ -63,4 +61,4 @@ const NotFoundPage = () => {
   );
 };
 
-export default NotFoundPage;
+export default InfosPage;
