@@ -41,7 +41,13 @@ const ExperiencePage = () => {
             </Text>
 
             <Box flex="1" align="center" borderRadius="md" boxShadow="xl" p={10} pb={20} overflow="hidden">
-              <StaticImage src="../images/code_review_bro_gray.png" alt="Code review" placeholder={"blurred"} />
+              <StaticImage
+                src="../images/code_review_bro_gray.png"
+                alt="Code review"
+                placeholder={"blurred"}
+                width={700}
+                height={700}
+              />
 
               <Stack
                 direction={["column", null, "row"]}
