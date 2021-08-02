@@ -62,11 +62,20 @@ const HomePage = () => {
                 Sylvie Mémain-Yé
               </Text>
             </Heading>
-            <Box pt={28} pb={5} d="flex" maxW={"100%"} alignItems="center" flexDir="column" textAlign="center" py={4}>
+            <Box
+              pt={28}
+              pb={5}
+              //boxShadow="lg"
+              d="flex"
+              maxW={"100%"}
+              alignItems="center"
+              flexDir="column"
+              textAlign="center"
+              py={4}
+            >
               <StaticImage
+                imgStyle={{ borderRadius: "100%" }}
                 alignSelf="center"
-                borderRadius="full"
-                boxShadow="lg"
                 src="../images/smyPhoto2.jpg"
                 alt="Smy Photo2"
                 placeholder="blurred"
