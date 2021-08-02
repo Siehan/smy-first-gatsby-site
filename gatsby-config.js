@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://smy-first-gatsby-site.netlify.app/",
     title: "smy-first-gatsby-site",
   },
   plugins: [

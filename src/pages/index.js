@@ -18,7 +18,7 @@ const HomePage = () => {
           // This is a presentational image, so the alt should be an empty string
           alt=""
           // Assisi, Perúgia, Itália by Bernardo Ferrari, via Unsplash
-          src="../images/IMG_5845.jpeg"
+          //src="../images/IMG_5845.jpeg"
           formats={["auto", "webp", "avif"]}
         />
 
@@ -42,9 +42,9 @@ const HomePage = () => {
               <Text
                 fontSize={40}
                 pb={5}
-                bgGradient="linear(to-r , #3CAADD, #4FAA1B)"
+                bgGradient="linear(to-l, #3CAADD, #4FAA1B)"
                 _hover={{
-                  bgGradient: "linear(to-l, cyan.500, blue.600, purple.600)",
+                  bgGradient: "linear(to-r, cyan.500, blue.600, purple.600)",
                 }}
                 bgClip="text"
               >
@@ -53,7 +53,7 @@ const HomePage = () => {
               <Text
                 fontSize={60}
                 fontWeight="bold"
-                bgGradient="linear(to-r , cyan.500, blue.600, purple.600)"
+                bgGradient="linear(to-r, cyan.500, blue.600, purple.600)"
                 _hover={{
                   bgGradient: "linear(to-l, #3CAADD, #4FAA1B)",
                 }}

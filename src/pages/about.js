@@ -9,7 +9,7 @@ const AboutPage = () => {
   return (
     <>
       <Navigation />
-      <Box as="section" w={"100%"} py={10} bgGradient="linear(to-l, gray.400, gray.300, gray.400)">
+      <Box as="section" w={"100%"} py={10} border={"yellow"} bgGradient="linear(to-l, gray.400, gray.300, gray.400)">
         <Container borderRadius="md" maxW="container.xl" py={20}>
           <SlideFadeOnScroll>
             <Heading
@@ -30,6 +30,7 @@ const AboutPage = () => {
               <StaticImage
                 src="../images/SylvieMemainYeComputer.jpg"
                 alt="Sylvie and computer"
+                imgStyle={{ borderRadius: "0.8%" }}
                 placeholder="blurred"
                 width={500}
                 height={500}

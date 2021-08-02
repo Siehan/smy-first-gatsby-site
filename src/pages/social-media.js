@@ -37,7 +37,12 @@ function SocialMediaPage() {
             </Heading>
 
             <Box align="center" borderRadius="md" boxShadow="xl" p={10} pb={20} overflow="hidden">
-              <StaticImage src="../images/social_media3.jpg" alt="Social media" placeholder={"blurred"} />
+              <StaticImage
+                src="../images/social_media3.jpg"
+                alt="Social media"
+                imgStyle={{ borderRadius: "1%" }}
+                placeholder={"blurred"}
+              />
 
               <Box pt={20} pb={15}>
                 {socialAccounts.map((item, index) => (

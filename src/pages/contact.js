@@ -32,6 +32,7 @@ const ContactPage = () => {
               <StaticImage
                 src="../images/icon_contact.png"
                 alt="icon contact"
+                imgStyle={{ borderRadius: "1%" }}
                 placeholder={"blurred"}
                 width={500}
                 height={500}
