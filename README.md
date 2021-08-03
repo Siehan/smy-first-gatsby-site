@@ -1,8 +1,29 @@
 <p align="center">
+<a href="https://smy-first-gatsby-site.netlify.app">
+  <img alt="Sylvie" src="../images/smyPhoto2.jpg" width="60" />
+</a>
+</p>
+
+<h1 align="center">
+  My porfolio with Gatsby
+</h1>
+
+**Create a Portfolio with Gatsby.**
+
+I am working on my Portfolio while discovering Gatsby.
+If you want to follow the evolution of my work and my findings, here is the Netlify link on which the project is deployed
+
+It is a "Work in Progress".
+I discover and I advance quietly.
+
+[the app](https://smy-first-gatsby-site.netlify.app/)
+
+<p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
+
 <h1 align="center">
   Gatsby minimal starter
 </h1>
