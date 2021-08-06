@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <>
       <Navigation />
-      <Box as="section" w={"100%"} py={20} bgGradient="linear(to-l, gray.400, gray.200, gray.400)">
+      <Box as="section" w={"100%"} py={20} bgGradient="linear(to-l, gray.100, gray.300, gray.100)">
         <Container borderRadius="md" maxW="container.xl" py={20}>
           <SlideFadeOnScroll>
             <Heading as="h1" fontSize={["3xl", "4xl"]} py={10} p={10}>

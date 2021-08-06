@@ -15,7 +15,7 @@ const ExperiencePage = () => {
   return (
     <>
       <Navigation />
-      <Box as="section" w={"100%"} py={10} bgGradient="linear(to-l, gray.200, gray.400, gray.200)">
+      <Box as="section" w={"100%"} py={10} bgGradient="linear(to-l, gray.200, gray.100, gray.200)">
         <Container borderRadius="md" maxW="container.xl" py={20}>
           <SlideFadeOnScroll>
             <Heading
